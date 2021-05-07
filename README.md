@@ -1,4 +1,4 @@
-🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
+🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧🚧
 
 # Site educativo para crianças que ensina sobre energia renovável com a elaboração de projetos práticos.
 
@@ -11,7 +11,11 @@ PROJETOS
 Próximos passos: 
 
 ✔️ PROPS PARA GIF
+
 ✔️ RESPONSIVIDADE DA SIDEBAR, TRANSFORMAR EM NAVBAR?
+
 ✔️ Scrollbar
+
 ⌛ BARRA DE PROGRESSO
+
 ⌛ USAR UMA API PRA DEIXAR DINÂMICA AS PÁGINAS COM MAP
