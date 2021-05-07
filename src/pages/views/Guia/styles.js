@@ -7,16 +7,16 @@ export const Post = styled.div`
     width: 90%;
 `;
 
-export const Img = styled.img`
-    width: 100%;
-    margin-top: 3rem;
-    height: auto;
-`;
-
 export const Col = styled.div`
     img{
         padding-top: 4rem;
     }
+`;
+
+export const Img = styled.img`
+    width: 100%;
+    margin-top: 3rem;
+    height: auto;
 `;
 
 export const CardBody = styled.div`
