@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react"
 import './styles.js';
 import { Post, Img, CardBody, Col, Card } from './styles';
 import '../../../components/responsividade/styles.css';
@@ -9,28 +9,93 @@ export const Background = styled.div`
     background-image: url(../../../img/181.jpg);
 `;
 
-export default function Projetos() {
+type Project = {
+  id: number;
+  title: string;
+  description: string;
+  nivel: number;
+  thumbnail: string;
+}
+
+type HomeProps = {
+  projects: Project[];
+}
+
+export default function Projetos({ projects }: HomeProps) {
   return (
     <>
       <Background>
         <Post className="container-fluid">
           <div className="row">
             <div className="col-sm-6">
+
+
+
+
               <Card className="mb-3">
-                  <div className="row no-gutters">
-                    <div className="col-md-4">
-                      <Img src="../../../img/206.jpg" alt="..." />
-                    </div>
-                    <div className="col-md-8">
-                      <CardBody>
-                        <h5>Fogão Solar</h5>
-                        <p>Explore a física com este projeto sobre a termodinâmica, que nada mais é do que o estudo da física sobre temperaturas. Venha conosco nessa aventura, é muito fácil e divertido. Vem comigo?</p>
-                        <p><small className="text-muted">Nivel 1</small><a href="/fogaoSolar"><button type="button" className="btn btn-success textolink mx-3">Vamos nessa!</button></a></p>
-                      </CardBody>
-                    </div>
+                <div className="row no-gutters">
+                  <div className="col-md-4">
+                    <Img src="../../../img/206.jpg" alt="..." />
                   </div>
+                  <div className="col-md-8">
+                    <CardBody>
+                      {/* {projects.map((project, index) => {
+                        return (
+                          <li key={project.id}>
+                            <Img src={project.thumbnail}/>
+
+                            {/* <div className={styles.episodeDetails}>
+                              <Link href={`/episodes/${episode.id}`}>
+                                <a>{episode.title}</a>
+                              </Link>
+                              <p>{episode.members}</p>
+                              <span>{episode.publishedAt}</span>
+                              <span>{episode.durationAsString}</span>
+                            </div}
+                          </li>
+                        )
+                      }
+                  )} }
+
+                  
+                      {/* {latestEpisodes.map((episode, index) => {
+                            return (
+                                <li key={episode.id}>
+                                    <Image
+                                        width={192}
+                                        height={192}
+                                        src={episode.thumbnail}
+                                        alt={episode.title}
+                                        objectFit="cover"
+                                    />
+
+                                    <div className={styles.episodeDetails}>
+                                        <Link href={`/episodes/${episode.id}`}>
+                                            <a>{episode.title}</a>
+                                        </Link>
+                                        <p>{episode.members}</p>
+                                        <span>{episode.publishedAt}</span>
+                                        <span>{episode.durationAsString}</span>
+                                    </div>
+
+                                    <button type="button" onClick={() => playList(episodeList, index)}>
+                                        <img src="/play-green.svg" alt="Reproduzir episódio" />
+                                    </button>
+                                </li>
+                            ) }
+                        })}*/}
+                      <h5>Fogão Solar</h5>
+                      <p>Explore a física com este projeto sobre a termodinâmica, que nada mais é do que o estudo da física sobre temperaturas. Venha conosco nessa aventura, é muito fácil e divertido. Vem comigo?</p>
+                      <p>
+                        <small className="text-muted">Nivel 1</small>
+                        <a href="/fogaoSolar"><button type="button" className="btn btn-success textolink mx-3">Vamos nessa!</button></a>
+                      </p>
+                    </CardBody>
+                  </div>
+                </div>
               </Card>
             </div>
+
 
             <div className="col-sm-6">
               <Card className="mb-3">
@@ -96,3 +161,26 @@ export default function Projetos() {
     </>
   );
 }
+/* 
+export const getStaticProps: GetStaticProps = async () => {
+  const { data } = await api.get('episodes', {
+      params: {
+          _limit: 12,
+          _sort: 'published_at',
+          _order: 'desc'
+      }
+  });
+
+  const episodes = data.map(episode => {
+      return {
+          id: episode.id,
+          title: episode.title,
+          thumbnail: episode.thumbnail,
+          members: episode.members,
+          publishedAt: format(parseISO(episode.published_at), 'd MMM yy', { locale: ptBR }),
+          duration: Number(episode.file.duration),
+          durationAsString: convertDurationToTimeString(Number(episode.file.duration)),
+          description: episode.description,
+          url: episode.file.url,
+      };
+  }) */
