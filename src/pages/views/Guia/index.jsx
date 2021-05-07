@@ -17,7 +17,7 @@ export default class ProjectsPage extends Component {
     projects: [],
   }
   async componentDidMount() {
-    const response = await api.get('');
+    const response = await api.get('projects');
     this.setState({ projects: response.data });
   }
 
