@@ -1,27 +1,86 @@
 import React, { Component } from "react"
 import './styles.js';
-import { Post, Img, CardBody, Col, Card } from './styles';
+import { Post, Img, CardBody, Card } from './styles';
 import '../../../components/responsividade/styles.css';
 
 import styled from 'styled-components';
+
+import { api } from '../../../services/api';
 
 export const Background = styled.div`
     background-image: url(../../../img/181.jpg);
 `;
 
-type Project = {
-  id: number;
-  title: string;
-  description: string;
-  nivel: number;
-  thumbnail: string;
-}
+export default class ProjectsPage extends Component {
 
-type HomeProps = {
-  projects: Project[];
-}
+  state = {
+    projects: [],
+  }
+  async componentDidMount() {
+    const response = await api.get('/projects');
+    this.setState({ projects: response.data });
+  }
 
+  render() {
+    let { projects } = this.state;
+    projects = projects.map(project => {
+      return {
+        id: project.id,
+        thumbnail: project.thumbnail,
+        title: project.title,
+        description: project.description,
+        nivel: project.nivel,
+        url: project.url,
+        
+      };
+    })
+
+    return (
+      <>
+
+        <Background>
+          <Post className="container-fluid">
+            <div className="row">
+              {projects.map(project => (
+
+                <div className="col-sm-6" key={project.id}>
+
+                  <Card className="mb-3">
+                    <div className="row no-gutters">
+                      <div className="col-md-4">
+                        <Img src={project.thumbnail} alt="..." />
+                        {/* <Img src={"../../../img/206.jpg"} alt="..." /> */}
+                      </div>
+                      <div className="col-md-8">
+                        <CardBody>
+
+                          <h5>{project.title}</h5>
+                          <p>{project.description}</p>
+                          <p>
+                            <small className="text-muted">Nivel {project.nivel}</small>
+                            <a href={project.url}><button type="button" className="btn btn-success textolink mx-3">Vamos nessa!</button></a>
+                          </p>
+                        </CardBody>
+                      </div>
+                    </div>
+                  </Card>
+                </div>
+
+              )
+
+              )}
+            </div>
+          </Post>
+        </Background>
+
+      </>
+    );
+  }
+
+}
+/*
 export default function Projetos({ projects }: HomeProps) {
+
   return (
     <>
       <Background>
@@ -57,7 +116,7 @@ export default function Projetos({ projects }: HomeProps) {
                       }
                   )} }
 
-                  
+
                       {/* {latestEpisodes.map((episode, index) => {
                             return (
                                 <li key={episode.id}>
@@ -83,7 +142,7 @@ export default function Projetos({ projects }: HomeProps) {
                                     </button>
                                 </li>
                             ) }
-                        })}*/}
+                        })}
                       <h5>Fogão Solar</h5>
                       <p>Explore a física com este projeto sobre a termodinâmica, que nada mais é do que o estudo da física sobre temperaturas. Venha conosco nessa aventura, é muito fácil e divertido. Vem comigo?</p>
                       <p>
@@ -161,26 +220,5 @@ export default function Projetos({ projects }: HomeProps) {
     </>
   );
 }
-/* 
-export const getStaticProps: GetStaticProps = async () => {
-  const { data } = await api.get('episodes', {
-      params: {
-          _limit: 12,
-          _sort: 'published_at',
-          _order: 'desc'
-      }
-  });
 
-  const episodes = data.map(episode => {
-      return {
-          id: episode.id,
-          title: episode.title,
-          thumbnail: episode.thumbnail,
-          members: episode.members,
-          publishedAt: format(parseISO(episode.published_at), 'd MMM yy', { locale: ptBR }),
-          duration: Number(episode.file.duration),
-          durationAsString: convertDurationToTimeString(Number(episode.file.duration)),
-          description: episode.description,
-          url: episode.file.url,
-      };
-  }) */
+ */
