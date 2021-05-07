@@ -2,21 +2,23 @@ import '../../../components/responsividade/styles.css';
 import { Parent, SidebarPos, Sidebar, Content, Descricao, NextIcon, ImgP1 } from './styles';
 import BackToHome from '../../../components/BackToHome';
 import { GifCard } from '../../../components/Gif';
-
+ import { ProgressBar } from '../../../components/ProgressBar'; 
 
 export default function GeradorBike() {
+
     return (
         <>
             <Parent>
                 <SidebarPos>
                     <Sidebar>
-                
+
                         <BackToHome />
-                        <GifCard gifSrc = '../../../img/Bike.gif'/>
+                        <GifCard gifSrc='../../../img/Bike.gif' />
 
                     </Sidebar>
                 </SidebarPos>
 
+                <ProgressBar />
                 <Content>
                     <Descricao>
 
@@ -31,7 +33,7 @@ export default function GeradorBike() {
                                             <h3>Gere energia e <span>se exercite</span> ao mesmo tempo</h3>
                                             <p>Nível de Dificuldade: Alto</p>
                                             <p>Para iniciar a sua missão, assista o video abaixoe e clique na seta azul para a direita
-                            </p>
+                                            </p>
                                             <div className="container text-center">
                                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/bhxokrQ_CAg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
                                             </div>

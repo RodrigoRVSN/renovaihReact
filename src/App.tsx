@@ -5,6 +5,7 @@ import FogaoSolar from './pages/Projetos/FogaoSolar';
 import GeradorBike from './pages/Projetos/Bike';
 import MiniGeradorEolico from './pages/Projetos/Eolico';
 import CarregadorSolar from './pages/Projetos/CarregadorSolar';
+import { ProgressBar } from './components/ProgressBar';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
 
       <BrowserRouter>
 
+      <ProgressBar />
         <Switch>
           <Route path="/fogaoSolar" component={FogaoSolar} />
           <Route path="/geradorBike" component={GeradorBike} />

@@ -17,7 +17,7 @@ export default class ProjectsPage extends Component {
     projects: [],
   }
   async componentDidMount() {
-    const response = await api.get('/projects');
+    const response = await api.get('');
     this.setState({ projects: response.data });
   }
 
@@ -31,7 +31,7 @@ export default class ProjectsPage extends Component {
         description: project.description,
         nivel: project.nivel,
         url: project.url,
-        
+
       };
     })
 
@@ -48,8 +48,7 @@ export default class ProjectsPage extends Component {
                   <Card className="mb-3">
                     <div className="row no-gutters">
                       <div className="col-md-4">
-                        <Img src={project.thumbnail} alt="..." />
-                        {/* <Img src={"../../../img/206.jpg"} alt="..." /> */}
+                        <Img src={project.thumbnail} alt={project.title} />
                       </div>
                       <div className="col-md-8">
                         <CardBody>
