@@ -1,5 +1,6 @@
 
 .footer-1{
+    height: 25vh;
     width: 100%;
     background-color: #000000;
     margin-left: 0%;
@@ -11,27 +12,29 @@
     transform: scale(1.1);
 }
 
-.textoRodape{
+.footer-1 .textoRodape{
     color: #FFF;
     text-decoration: none;
     font-family: 'Modak', cursive;   
-    font-size: 50px;
+    font-size: 3rem;
+    text-align: center;
     text-shadow: 4px 2px 2px #2117a7;
-    margin-left: 20%;
 }
 
-.textoRodape-2{
+.footer-1 .textoRodape-2{
     font-family: 'Fredoka One', cursive;
     color: #8d8d8d;
-    font-size: 14px;
+    font-size: 0.7rem;
     text-decoration: none;
-    margin-left: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: -20px;
     font-weight: lighter; 
 }
 
 .icone{
-    width: 50px;
+    width: 2rem;
     padding: 5px;
     margin-top: 15px;
 }
@@ -39,6 +42,10 @@
 .icone:hover{
     transition: ease-in 0.1s;
     transform: scale(1.2);
+}
+
+.link {
+    text-decoration: none;
 }
 
 .carousel-caption{
@@ -64,14 +71,4 @@
     font-size: 20px;
     text-shadow: 2px 2px 2px #2117a7;
     margin-top: -8%;
-}
-
-.link {
-    text-decoration: none;
-}
-
-.card-body{
-    font-family: 'Roboto Mono', monospace;  
-    font-size: 20px;
-    color: #000000;
 }

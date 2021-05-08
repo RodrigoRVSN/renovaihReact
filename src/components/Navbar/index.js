@@ -8,6 +8,8 @@ import '../responsividade/styles.css';
 const Navbar = styled.nav`
     background: linear-gradient(to right,${colors['dark-blue']},${colors.blue});
     height: 14vh;
+    width: 100vw;
+    padding-right: 1.5rem;
     border-radius: 0 0 5px 5px;
 `;
 

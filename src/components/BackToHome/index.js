@@ -5,8 +5,10 @@ import { colors } from '../../db.json';
 
 const Icone = styled.div`
     background-color: ${colors["dark-blue"]};
+    height: 5%;
     padding: 1rem;
     border-radius: 0 0 1.1rem 1.1rem;
+    z-index: 1;
     i{
         margin-right: 2rem;
     }
@@ -15,13 +17,13 @@ const Icone = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
     p{
         margin: auto;
         align-items: center;
         color: ${colors.pink};
     }
-
     &:hover{
         font-weight: 800;
         p{
@@ -38,6 +40,9 @@ const Icone = styled.div`
         i{
             display: block;
             margin: auto;
+        }
+        a{
+            cursor: pointer;
         }
     }  
 

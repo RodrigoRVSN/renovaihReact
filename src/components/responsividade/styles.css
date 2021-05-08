@@ -1,8 +1,8 @@
-@media screen and (max-width:835px){  
+@media screen and (max-width:900px){  
 
     .footer-1{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .textoRodape-2{
@@ -17,8 +17,15 @@
         padding: 5px;
         margin-top: 0px;
     }
+    
 
-    .collapse{
-        background: linear-gradient(to right,var(--dark-blue),var(--blue));
+.textoRodape{  
+    font-size: 3rem;
+    text-align: center;
     }
+}
+
+body{
+    
+    overflow-x: hidden;
 }

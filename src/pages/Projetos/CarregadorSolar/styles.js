@@ -66,11 +66,6 @@ export const Descricao = styled.section`
     }
 `;
 
-export const NextIcon = styled.div`
-    margin-top: 400%;
-    color: ${colors.blue};
-`;
-
 export const ImgP1 = styled.div`
     width: 30%;
 `;

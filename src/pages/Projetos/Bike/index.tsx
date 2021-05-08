@@ -21,7 +21,6 @@ export default function GeradorBike() {
                 <Content>
                     <Descricao>
 
-                        <section className="descricao">
 
 
                             <div className="container">
@@ -102,7 +101,6 @@ export default function GeradorBike() {
                                     </div>
                                 </div>
                             </div>
-                        </section>
                     </Descricao>
                 </Content>
             </Parent>

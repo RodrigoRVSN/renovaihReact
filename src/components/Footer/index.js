@@ -10,11 +10,9 @@ export default class Index extends React.Component {
                     <div className="container-fluid footer-1">
                         <div className="row align-items-center">
 
-                            <div className="col logo-name">
                                 <a className="textoRodape" href="/">Renovaíh</a>
-                            </div>
 
-                            <div className="col mt-4">
+                            <div className="col ">
                                 <a href="/energias" className="btn btn-link textoRodape-2">Energia Renovável</a>
                                 <a href="/sustentabilidade" className="btn btn-link textoRodape-2">Sustentabilidade</a>
                                 <a href="/projetos" className="btn btn-link textoRodape-2">Projetos</a>
