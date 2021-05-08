@@ -64,6 +64,14 @@ export const Descricao = styled.section`
         overflow-y: scroll;
         margin-top: 10rem;
     }
+    iframe{
+        width: 55vw;
+        height: 55vh;
+        @media screen and (max-width:800px){
+            height: 60vh;
+            width: 80vw;
+        }
+    }
 `;
 
 export const ImgP1 = styled.div`

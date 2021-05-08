@@ -35,9 +35,9 @@ export default function FogaoSolar() {
                                         <h2>Fogão <span>Solar</span></h2>
                                         <h3>Como aproveitar a energia solar <span>de uma forma diferente</span> </h3>
                                         <p>Nível de Dificuldade: Baixo </p>
-                                        <p>Para iniciar a sua missão, assista o video abaixoe e clique na seta azul para a direita</p>
+                                        <p>Para iniciar a sua missão, assista o video abaixo e clique na seta para a direita</p>
                                         <div className="container text-center">
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/F4EsMsCc0ic" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+                                            <iframe src="https://www.youtube.com/embed/F4EsMsCc0ic" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                         </div>
 
                                     </div>
