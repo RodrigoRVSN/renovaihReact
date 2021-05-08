@@ -6,7 +6,7 @@ export const Parent = styled.div`
 `;
 
 export const SidebarPos = styled.div`
-        position: absolute;
+    position: absolute;
 `;
 
 export const Sidebar = styled.div`
@@ -23,9 +23,9 @@ export const Sidebar = styled.div`
 export const Content = styled.div`
     position: absolute;
     margin-left: 20%;
+    margin-top: 10vh;
     width: 80%;
     height: 100%;
-    overflow-y: auto;
     padding: 0 3%;
     @media screen and (max-width:800px){
         display: block;
@@ -37,8 +37,6 @@ export const Content = styled.div`
 
 export const Descricao = styled.section`
     position: relative;
-    top: 45%;
-    transform: translateY(-50%);
      h2{
 
         color: #343a40;
@@ -62,16 +60,17 @@ export const Descricao = styled.section`
         font-size: 18px;
     } 
     @media screen and (max-width:800px){
+        height: 80%;
+        overflow-y: scroll;
         margin-top: 10rem;
     }
 `;
 
-export const NextIcon = styled.div`
-    margin-top: 40%;
-    color: ${colors.blue};
-`;
-
 export const ImgP1 = styled.div`
-    width: 30%;
+    margin-top: 1rem;
+    width: 50vw;
+    @media screen and (max-width:800px){
+        width: 80vw;
+    }
 `;
 

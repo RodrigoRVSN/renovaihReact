@@ -67,6 +67,10 @@ export const Descricao = styled.section`
 `;
 
 export const ImgP1 = styled.img`
-    width: 30%;
+    margin-top: 1rem;
+    width: 50vw;
+    @media screen and (max-width:800px){
+        width: 80vw;
+    }
 `;
 

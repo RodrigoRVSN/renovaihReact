@@ -31,20 +31,23 @@ const Button = styled.button`
     margin-top: auto;
     height: 1rem;
     color: ${colors.purple};
+
     i{
-        
+        font-size: 5rem;
         color: ${colors['dark-blue']};
         &:hover{
             color: ${colors.pink};
         }
     }
     @media screen and (max-width:800px){
-        
-
-        margin: 4rem 3.5rem auto 2.5rem;
-        ::-webkit-scrollbar {
-            display: none;
-    }
+        i{
+            color: ${colors.pink};
+            position: absolute;
+            position: fixed;
+            margin-top: -4rem;
+            font-size: 3rem;
+        }
+        margin: 4rem 2rem auto -1rem;
     }
 `;
 
@@ -74,14 +77,14 @@ export const ProgressBar = ({ total }: totalProps) => {
             <Button onClick={progressBack} className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span className="visually-hidden">Previous</span>
                 <div>
-                    <i className="fas fa-arrow-circle-left fa-5x"></i>
+                    <i className="fas fa-arrow-circle-left"></i>
                 </div>
             </Button>
 
             <Button onClick={progressNext} className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span className="carousel-control-next-icon visually-hidden">Next</span>
                 <div >
-                    <i className="fas fa-arrow-circle-right fa-5x "></i>
+                    <i className="fas fa-arrow-circle-right "></i>
                 </div>
             </Button>
         </>
