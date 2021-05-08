@@ -10,7 +10,6 @@ const Gif = styled.img`
     border: 8px solid #ffffff;
     border-radius: 50%;
     background-color: ${colors.cyan};
-    
     @media screen and (max-width:800px){
        display: none;
     }

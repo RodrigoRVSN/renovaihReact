@@ -67,7 +67,7 @@ export const Descricao = styled.section`
 `;
 
 export const NextIcon = styled.div`
-    margin-top: 400%;
+    margin-top: 40%;
     color: ${colors.blue};
 `;
 

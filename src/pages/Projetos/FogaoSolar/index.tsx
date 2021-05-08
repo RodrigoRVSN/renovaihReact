@@ -1,12 +1,13 @@
 import '../../../components/responsividade/styles.css';
 import BackToHome from '../../../components/BackToHome';
-import { Parent, SidebarPos, Sidebar, Content, Descricao, NextIcon, ImgP1 } from './styles';
+import { Parent, SidebarPos, Sidebar, Content, Descricao, ImgP1 } from './styles';
 import p1 from '../../../img/passo1.png';
 import p2 from '../../../img/p2.jpg';
 import p3 from '../../../img/p3.jpg';
 import p4 from '../../../img/p4.jpg';
 import p5 from '../../../img/p5.jpg';
 import { GifCard } from '../../../components/Gif';
+import { ProgressBar } from '../../../components/ProgressBar';
 
 export default function FogaoSolar() {
     return (
@@ -20,6 +21,8 @@ export default function FogaoSolar() {
 
                     </Sidebar>
                 </SidebarPos>
+
+                <ProgressBar total={12} />
 
                 <Content>
 
@@ -180,16 +183,6 @@ export default function FogaoSolar() {
                                     </div>
 
                                 </div>
-                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                    <NextIcon>
-                                        <i className="fas fa-arrow-circle-left fa-5x"></i>
-                                    </NextIcon>
-                                </button>
-                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                    <NextIcon>
-                                        <i className="fas fa-arrow-circle-right fa-5x "></i>
-                                    </NextIcon>
-                                </button>
                             </div>
                         </div>
                     </Descricao>

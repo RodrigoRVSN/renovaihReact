@@ -1,7 +1,8 @@
 import '../../../components/responsividade/styles.css';
 import BackToHome from '../../../components/BackToHome';
-import { Parent, SidebarPos, Sidebar, Content, Descricao, NextIcon } from './styles';
+import { Parent, SidebarPos, Sidebar, Content, Descricao } from './styles';
 import { GifCard } from '../../../components/Gif';
+import { ProgressBar } from '../../../components/ProgressBar';
 
 export default function CarregadorSolar() {
     return (
@@ -15,6 +16,9 @@ export default function CarregadorSolar() {
 
                     </Sidebar>
                 </SidebarPos>
+
+                <ProgressBar total={6} />
+
                 <Content>
                     <Descricao>
                         <div className="container">
@@ -72,20 +76,6 @@ export default function CarregadorSolar() {
                                     </div>
 
                                 </div>
-                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span className="visually-hidden">Previous</span>
-                                    <NextIcon>
-                                        <i className="fas fa-arrow-circle-left fa-5x"></i>
-                                    </NextIcon>
-                                </button>
-                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span className="visually-hidden">Next</span>
-                                    <NextIcon>
-                                        <i className="fas fa-arrow-circle-right fa-5x "></i>
-                                    </NextIcon>
-                                </button>
                             </div>
                         </div>
                     </Descricao>

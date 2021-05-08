@@ -1,7 +1,8 @@
 import '../../../components/responsividade/styles.css';
 import BackToHome from '../../../components/BackToHome';
-import { Parent, SidebarPos, Sidebar, Content, Descricao, NextIcon } from './styles';
+import { Parent, SidebarPos, Sidebar, Content, Descricao } from './styles';
 import { GifCard } from '../../../components/Gif';
+import { ProgressBar } from '../../../components/ProgressBar';
 
 export default function MiniGeradorEolico() {
     return (
@@ -15,6 +16,8 @@ export default function MiniGeradorEolico() {
 
                     </Sidebar>
                 </SidebarPos>
+
+                <ProgressBar total={11} />
 
                 <Content>
 
@@ -105,16 +108,6 @@ export default function MiniGeradorEolico() {
 
                                 </div>
 
-                                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                    <NextIcon>
-                                        <i className="fas fa-arrow-circle-left fa-5x"></i>
-                                    </NextIcon>
-                                </button>
-                                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                    <NextIcon>
-                                        <i className="fas fa-arrow-circle-right fa-5x "></i>
-                                    </NextIcon>
-                                </button>
                             </div>
 
                         </div>

@@ -1,40 +1,89 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import styled from "styled-components";
 import { colors } from '../../db.json';
 
 const BarProgress = styled.div`
-    
-    display:flex;
-    align-items: center;
-    
+    position: fixed;
     span{
         font-size: 4rem;
     }
 
     > div{
         flex: 1;
-        height: 4px;
+        height: 1.25vh;
         border-radius: 0 0 10px 10px;
-        background: ${colors['dark-blue']};
+        background: linear-gradient(to right, ${colors.purple}, ${colors['dark-blue']});
         position: relative;
     }
 
     > div > div {
-        height: 7px;
-        background: ${colors.cyan};
+        border-radius: 1rem;
+        height: 1.5vh;
+        background: linear-gradient(to right, ${colors.blue}, ${colors.cyan});
+    }
+
+`;
+
+const Button = styled.button`
+    display: block;
+    margin-bottom: 7rem;
+    margin-top: auto;
+    height: 1rem;
+    color: ${colors.purple};
+    i{
+        
+        color: ${colors['dark-blue']};
+        &:hover{
+            color: ${colors.pink};
+        }
+    }
+    @media screen and (max-width:800px){
+        
+
+        margin: 4rem 3.5rem auto 2.5rem;
+        ::-webkit-scrollbar {
+            display: none;
+    }
     }
 `;
 
+interface totalProps {
+    total: number;
+}
 
-export function ProgressBar() {
-    const total = 100;
-    const y = 20;
+export const ProgressBar = ({ total }: totalProps) => {
+    let [progress, setProgress] = useState(0);
+    const progressNext = () => {
+        let porcent = (1 / ((total - 1) / 100));
+        (progress >= 100) ? setProgress(0) : setProgress(progress + porcent);
+    }
+    const progressBack = () => {
+        let porcent = (1 / ((total - 1) / 100));
+        (progress === 0) ? setProgress(100) : setProgress(progress - porcent);
+    }
+
     return (
-        <BarProgress>
-            <div style={{ width: `${total}vw` }}>
-                <div style={{ width: `${y}%` }} />
-            </div>
-        </BarProgress>
+        <>
+            <BarProgress>
+                <div style={{ width: `${100}vw` }}>
+                    <div style={{ width: `${progress}%` }} />
+                </div>
+            </BarProgress>
+
+            <Button onClick={progressBack} className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span className="visually-hidden">Previous</span>
+                <div>
+                    <i className="fas fa-arrow-circle-left fa-5x"></i>
+                </div>
+            </Button>
+
+            <Button onClick={progressNext} className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span className="carousel-control-next-icon visually-hidden">Next</span>
+                <div >
+                    <i className="fas fa-arrow-circle-right fa-5x "></i>
+                </div>
+            </Button>
+        </>
     );
 }
