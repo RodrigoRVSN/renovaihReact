@@ -2,11 +2,10 @@
     color: #FFF;
     text-decoration: none;
     font-family: 'Modak', cursive;   
-    font-size: 4rem;
     text-shadow: 4px 2px 2px #2117a7;
     color:var(--pink);
-    margin-left: 3rem;
-    font-size: 2.3rem;
+    margin-left: 3vw;
+    font-size: 2.1rem;
 }
 
 .navbar-dark .navbar-brand:hover{

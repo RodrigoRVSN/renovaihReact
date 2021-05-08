@@ -9,6 +9,9 @@ export const Background = styled.div`
 export const Video = styled.video`
     border-bottom: 5px solid #000000;
     width: 100%;
+    @media screen and (max-width:800px){
+        margin-top: 10vh;
+    }
 `;
 
 export const Card = styled.div`
