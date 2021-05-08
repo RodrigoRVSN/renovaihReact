@@ -64,13 +64,13 @@ export const Descricao = styled.section`
         overflow-y: scroll;
         margin-top: 10rem;
     }
-`;
-
-export const ImgP1 = styled.img`
-    margin-top: 1rem;
-    width: 50vw;
-    @media screen and (max-width:800px){
-        width: 80vw;
+    iframe{
+        width: 55vw;
+        height: 55vh;
+        @media screen and (max-width:800px){
+            height: 60vh;
+            width: 80vw;
+        }
     }
 `;
 

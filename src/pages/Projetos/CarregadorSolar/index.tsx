@@ -30,7 +30,7 @@ export default function CarregadorSolar() {
                                         <p>Nível de Dificuldade: Médio </p>
                                         <p>Para iniciar a sua missão, assista o video abaixo e e clique na seta azul para a direita!</p>
                                         <div className="container text-center">
-                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/zc-N13YEqlk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                            <iframe src="https://www.youtube.com/embed/zc-N13YEqlk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                         </div>
 
                                     </div>
