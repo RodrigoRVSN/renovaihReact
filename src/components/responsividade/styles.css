@@ -19,13 +19,12 @@
     }
     
 
-.textoRodape{  
-    font-size: 3rem;
-    text-align: center;
+    .textoRodape{  
+        font-size: 3rem;
+        text-align: center;
     }
 }
 
 body{
-    
     overflow-x: hidden;
 }

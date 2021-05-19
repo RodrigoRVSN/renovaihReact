@@ -5,6 +5,8 @@ import { colors } from '../../db.json';
 import './styles.css';
 import '../responsividade/styles.css';
 
+import ReactPixel from 'react-facebook-pixel';
+
 const Navbar = styled.nav`
     background: linear-gradient(to right,${colors['dark-blue']},${colors.blue});
     height: 14vh;
@@ -28,18 +30,22 @@ export default class Index extends React.Component {
                         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <Link to="/" exact className="nav-link" >Inicio</Link>
+                                    <Link to="/" exact className="nav-link" >INÍCIO</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/projetos" className="nav-link" >Projetos</Link>
+                                    <Link to="/projetos" className="nav-link" >PROJETOS</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/sobre" className="nav-link" >Sobre</Link>
+                                    <Link to="/sobre" className="nav-link" >SOBRE</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <Link to="/login" className="nav-link" >LOGIN</Link>
                                 </li>
 
                             </ul>
                         </div>
                     </div>
+                    
                 </Navbar>
             </>
         )
