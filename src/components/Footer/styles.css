@@ -6,7 +6,7 @@
     margin-left: 0%;
 }
 
-.textoRodape:hover{
+a:hover{
     color: var(--cyan);
     transition: ease-in 0.1s;
     transform: scale(1.1);
@@ -71,4 +71,8 @@
     font-size: 20px;
     text-shadow: 2px 2px 2px #2117a7;
     margin-top: -8%;
+}
+
+.col{
+    text-align: center;
 }

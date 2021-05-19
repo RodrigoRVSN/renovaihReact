@@ -7,6 +7,7 @@ import Projetos from './pages/views/Guia';
 import Sobre from './pages/views/Sobre';
 import Energias from './pages/views/Energias';
 import Sustentabilidade from './pages/views/Sustentabilidade';
+import Login from './pages/views/Login';
 
 export default function Routes() {
     return (
@@ -18,6 +19,7 @@ export default function Routes() {
                 <Route path="/sobre" component={Sobre} />
                 <Route path="/energias" component={Energias} />
                 <Route path="/sustentabilidade" component={Sustentabilidade} />
+                <Route path="/login" component={Login} />
             </Switch>
             <Footer />
         </BrowserRouter>

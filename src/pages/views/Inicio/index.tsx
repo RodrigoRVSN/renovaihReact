@@ -7,6 +7,11 @@ export default function Inicio() {
     return (
         <>
 
+            <noscript><img height="1" width="1" alt="aa"
+                src="https://www.facebook.com/tr?id=182159233783232&ev=PageView&noscript=1"
+            /></noscript>
+
+
             <Background>
                 <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">
