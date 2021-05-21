@@ -3,7 +3,6 @@ import '../../../components/responsividade/styles.css';
 import { LoginScreen, LoginBox, Header, InputLogin, Input, Submit, Button } from './styles';
 
 import { TiLockClosed, TiUser } from "react-icons/ti";
-import styled from 'styled-components';
 
 export default function Login() {
     

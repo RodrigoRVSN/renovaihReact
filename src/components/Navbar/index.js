@@ -5,8 +5,6 @@ import { colors } from '../../db.json';
 import './styles.css';
 import '../responsividade/styles.css';
 
-import ReactPixel from 'react-facebook-pixel';
-
 const Navbar = styled.nav`
     background: linear-gradient(to right,${colors['dark-blue']},${colors.blue});
     height: 14vh;
