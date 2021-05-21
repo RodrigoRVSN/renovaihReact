@@ -36,9 +36,9 @@ export default class Index extends React.Component {
                                 <li className="nav-item">
                                     <Link to="/sobre" className="nav-link" >SOBRE</Link>
                                 </li>
-                                <li className="nav-item">
+                                {/* <li className="nav-item">
                                     <Link to="/login" className="nav-link" >LOGIN</Link>
-                                </li>
+                                </li> */}
 
                             </ul>
                         </div>
