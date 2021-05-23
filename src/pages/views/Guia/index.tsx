@@ -5,7 +5,7 @@ import '../../../components/responsividade/styles.css';
 import styled from 'styled-components';
 
 export const Background = styled.div`
-    background-image: url(../../../img/181.jpg);
+    background-image: url(/img/181.jpg);
 `;
 
 export default class ProjectsPage extends Component {

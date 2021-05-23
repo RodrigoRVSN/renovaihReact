@@ -4,7 +4,7 @@ import '../../../components/responsividade/styles.css';
 import styled from 'styled-components';
 
 export const Background = styled.div`
-    background-image: url(../../img/181.jpg);
+    background-image: url(/img/181.jpg);
 `;
 
 export const Planeta = styled.img`
@@ -102,23 +102,23 @@ export default function Energias() {
                 <div className="text-center">
                   <div className="linha1">
                     <div className="container-fluid">
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=1" className="ods" target="blank"><img className="imglin" src="/img/ods.png" alt="" /></a>
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=2" className="ods" target="blank"><img className="imglin" src="/img/2.png" alt="" /></a>
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=3" className="ods" target="blank"><img className="imglin" src="/img/3.png" alt="" /></a>
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=4" className="ods" target="blank"><img className="imglin" src="/img/4.png" alt="" /></a>
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=5" className="ods" target="blank"><img className="imglin" src="/img/5.png" alt="" /></a>
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=6" className="ods" target="blank"><img className="imglin" src="/img/4.png" alt="" /></a>
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=7" className="ods" target="blank"><img className="imglin" src="/img/7.png" alt="" /></a>
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=8" className="ods" target="blank"><img className="imglin" src="/img/8.png" alt="" /></a>
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=9" className="ods" target="blank"><img className="imglin" src="/img/9.png" alt="" /></a>
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=10" className="ods" target="blank"><img className="imglin" src="/img/10.png" alt="" /></a>
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=11" className="ods" target="blank"><img className="imglin" src="/img/11.png" alt="" /></a>
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=12" className="ods" target="blank"><img className="imglin" src="/img/12.png" alt="" /></a>
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=13" className="ods" target="blank"><img className="imglin" src="/img/13.png" alt="" /></a>
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=14" className="ods" target="blank"><img className="imglin" src="/img/14.png" alt="" /></a>
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=15" className="ods" target="blank"><img className="imglin" src="/img/15.png" alt="" /></a>
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=16" className="ods" target="blank"><img className="imglin" src="/img/16.png" alt="" /></a>
-                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=17" className="ods" target="blank"><img className="imglin" src="/img/17.png" alt="" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=1" rel="noreferrer" target="_blank"><img className="imglin" src="/img/1.png" alt="ods 1" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=2" rel="noreferrer" target="_blank"><img className="imglin" src="/img/2.png" alt="" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=3" rel="noreferrer" target="_blank"><img className="imglin" src="/img/3.png" alt="" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=4" rel="noreferrer" target="_blank"><img className="imglin" src="/img/4.png" alt="" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=5" rel="noreferrer" target="_blank"><img className="imglin" src="/img/5.png" alt="" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=6" rel="noreferrer" target="_blank"><img className="imglin" src="/img/4.png" alt="" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=7" rel="noreferrer" target="_blank"><img className="imglin" src="/img/7.png" alt="" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=8" rel="noreferrer" target="_blank"><img className="imglin" src="/img/8.png" alt="" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=9" rel="noreferrer" target="_blank"><img className="imglin" src="/img/9.png" alt="" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=10" rel="noreferrer" target="_blank"><img className="imglin" src="/img/10.png" alt="" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=11" rel="noreferrer" target="_blank"><img className="imglin" src="/img/11.png" alt="" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=12" rel="noreferrer" target="_blank"><img className="imglin" src="/img/12.png" alt="" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=13" rel="noreferrer" target="_blank"><img className="imglin" src="/img/13.png" alt="" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=14" rel="noreferrer" target="_blank"><img className="imglin" src="/img/14.png" alt="" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=15" rel="noreferrer" target="_blank"><img className="imglin" src="/img/15.png" alt="" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=16" rel="noreferrer" target="_blank"><img className="imglin" src="/img/16.png" alt="" /></a>
+                      <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=17" rel="noreferrer" target="_blank"><img className="imglin" src="/img/17.png" alt="" /></a>
                     </div>
                   </div>
                 </div>
