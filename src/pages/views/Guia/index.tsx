@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import './styles.js';
 import { Post, Img, CardBody, Card, Col } from './styles';
 import '../../../components/responsividade/styles.css';
 

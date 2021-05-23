@@ -28,7 +28,7 @@ export default class Index extends React.Component {
                         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <Link to="/" exact className="nav-link" >INÍCIO</Link>
+                                    <Link to="/" className="nav-link" >INÍCIO</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link to="/projetos" className="nav-link" >PROJETOS</Link>

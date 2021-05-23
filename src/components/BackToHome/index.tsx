@@ -55,7 +55,7 @@ export default class Index extends React.Component {
                 <header>
 
                     <Icone>
-                        <a href="/projetos"><i class="fas fa-home fa-2x"></i>
+                        <a href="/projetos"><i className="fas fa-home fa-2x"></i>
                             <p>VOLTAR</p>
                         </a>
                     </Icone>
