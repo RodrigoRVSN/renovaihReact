@@ -8,12 +8,12 @@ ________________________________________________________________________________
 
 # O QUE FOI UTILIZADO 🚀 
 
-•	Visual Studio Code (IDE ou ambiente de programação);
-•	Vercel (para hospedagem gratuita);
-•	Git e Github (armazenamento).
-•	HTML5;
-•	CSS3;
-•	React (Typescript).
+- Visual Studio Code (IDE ou ambiente de programação);
+- Vercel (para hospedagem gratuita);
+- Git e Github (armazenamento).
+- HTML5;
+- CSS3;
+- React (Typescript).
 
 _____________________________________________________________________________________________________
 
