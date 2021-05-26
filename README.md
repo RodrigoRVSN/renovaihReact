@@ -10,12 +10,11 @@ PROJETOS
 
 Próximos passos: 
 
-✔️ PROPS PARA GIF
+✔️ SQLITE
+✔️ SQLITE3
+✔️ NODEJS
 
-✔️ RESPONSIVIDADE DA SIDEBAR, TRANSFORMAR EM NAVBAR?
-
-✔️ Scrollbar
-
-⌛ BARRA DE PROGRESSO
-
-⌛ USAR UMA API PRA DEIXAR DINÂMICA AS PÁGINAS COM MAP
+Frontend
+Banco
+Backend
+Criar banco de dados
