@@ -42,7 +42,6 @@ const Button = styled.button`
     @media screen and (max-width:800px){
         i{
             color: ${colors.pink};
-            position: absolute;
             position: fixed;
             margin-top: -4rem;
             font-size: 3rem;
@@ -56,20 +55,24 @@ interface totalProps {
 }
 
 export const ProgressBar = ({ total }: totalProps) => {
+
     let [progress, setProgress] = useState(0);
+    let porcent = Math.round((1 / ((total - 1) / 100)));
     const progressNext = () => {
-        let porcent = (1 / ((total - 1) / 100));
         (progress >= 100) ? setProgress(0) : setProgress(progress + porcent);
+        console.log('mais ' + progress);
     }
     const progressBack = () => {
-        let porcent = (1 / ((total - 1) / 100));
-        (progress === 0) ? setProgress(100) : setProgress(progress - porcent);
-    }
+        (progress <= 0) ? setProgress(100) : setProgress(progress - porcent);
 
+        console.log('menos -> ' + progress);
+    }
+    if (progress < 0) setProgress(0);
+    
     return (
         <>
             <BarProgress>
-                <div style={{ width: `${100}vw` }}>
+                <div style={{ width: "100vw" }}>
                     <div style={{ width: `${progress}%` }} />
                 </div>
             </BarProgress>
