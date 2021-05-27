@@ -1,11 +1,6 @@
-import React from "react";
 import '../../../components/responsividade/styles.css';
 
 import styled from 'styled-components';
-
-export const Background = styled.div`
-    background-image: url(/img/181.jpg);
-`;
 
 export const Planeta = styled.img`
     margin-top: 8rem;
@@ -14,7 +9,6 @@ export const Planeta = styled.img`
 export default function Energias() {
   return (
     <>
-      <Background>
         <div className="container mt-2">
 
           <div className="cardSust mb-3 text-center">
@@ -137,7 +131,6 @@ export default function Energias() {
           </div>
 
         </div>
-      </Background>
     </>
   );
 }

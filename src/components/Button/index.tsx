@@ -7,7 +7,7 @@ export const Button = styled.button`
     color: blue;
     border: 2px solid ${colors.purple};
     height: 45px;
-    width: 100%;
+    width: 80%;
     border-radius: 15px;
     font-family: 'Fredoka One', cursive;
 &:hover{

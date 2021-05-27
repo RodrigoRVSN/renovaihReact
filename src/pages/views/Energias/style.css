@@ -4,6 +4,7 @@
     --dark-blue: #3a0ca3;
     --blue: #4361ee;
     --cyan: #4cc9f0;
+    --background: #d8ebf1;
 }
 
 *{
@@ -11,6 +12,10 @@
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--background);
 }
 
 
@@ -75,6 +80,7 @@
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 1px 1px 10px var(--pink);
+    text-align: center;
 }
 
 .card-body{

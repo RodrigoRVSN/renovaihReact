@@ -6,7 +6,7 @@ export const Background = styled.div`
 `;
 
 export const Title = styled.h1`
-    margin-top: 6rem;
+    padding-top: 18vh;
     text-align: center;
     color: var(--pink);
     font-weight: 200;
@@ -31,12 +31,12 @@ export const Card = styled.div`
     border-radius: 20px;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(45px);
+    backdrop-filter: blur(2rem);
     color: ${colors.blue};
     border: 2px solid ${colors.pink};
 
 :hover{
-    transition: ease-in 0.2s;
+    transition: ease-in 0.1s;
     transform: scale(1.1);
     box-shadow: 15px 15px 30px ${colors.pink};
 }

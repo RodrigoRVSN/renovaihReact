@@ -11,10 +11,13 @@ const Navbar = styled.nav`
     width: 100vw;
     padding-right: 1.5rem;
     border-radius: 0 0 5px 5px;
+    
 `;
 
 export default class Index extends React.Component {
+
     render() {
+        
         return (
             <>
                 <Navbar className="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
@@ -43,7 +46,7 @@ export default class Index extends React.Component {
                             </ul>
                         </div>
                     </div>
-                    
+
                 </Navbar>
             </>
         )

@@ -1,4 +1,3 @@
-import React from "react";
 import '../../../components/responsividade/styles.css';
 import { Title, Profile, Card, Proposal, Background } from "./styles";
 

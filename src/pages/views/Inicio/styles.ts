@@ -15,7 +15,7 @@ export const Video = styled.video`
 `;
 
 export const Card = styled.div`
-    margin: 1rem;
+    margin: 1rem 1rem 3rem 1rem;
     &:hover{
         transition: ease-in 0.2s;
         transform: scale(1.05);
@@ -25,30 +25,31 @@ export const Card = styled.div`
     &:not(:hover){
     transition: ease-in 0.1s;
     transform: scale(1.0);
-}
+    }
 `;
 
 export const Cardes = styled.div`
-    padding-bottom: 5%;
+    padding-bottom: 7vh;
 `;
 
 export const CardBody = styled.div`
-    padding-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
     background-color: #f5eeee;
     h2{
         font-family: 'Fredoka One', cursive;
         font-size: 1.2rem;
         color: ${colors.purple};
-        padding-bottom: 1rem;
-        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
         font-weight: bold;
         text-align: center;
     }
     h3{
-        padding: 1rem;
+        padding: 0 1rem 0 1rem;
         font-family: 'Fredoka One', cursive;
         color: ${colors.blue};
-        font-size: 17px;
+        font-size: 1rem;
     }
     
 `;

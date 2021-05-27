@@ -19,14 +19,23 @@
     font-family: 'Fredoka One', cursive;
     margin-left: 2rem;
 }
+
 .navbar-dark .navbar-nav .nav-link:hover {
     transition: ease all 0.2s;
     border-top: 4px solid var(--pink);
     color: var(--cyan);
 }
 
-@media screen and (max-width:800px){
-.navbar-dark .container-fluid li{
+@media screen and (max-width:992px){
+    .navbar-dark .container-fluid li{
         background: linear-gradient(to right,var(--dark-blue),var(--blue));
+    }
+    
+    .navbar-dark .navbar-nav .nav-link:hover {
+        transform: none;
+    }
+
+    .navbar-dark .navbar-brand{
+        font-size: 1.8rem;
     }
 }
