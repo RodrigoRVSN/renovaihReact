@@ -62,12 +62,10 @@ export const ProgressBar = ({ total }: totalProps) => {
     const progressNext = () => {
 
         (progress >= 100) ? setProgress(0) : setProgress(progress + porcent);
-        console.log(progress);
 
     }
     const progressBack = () => {
         (progress <= 0) ? setProgress(100) : setProgress(progress - porcent);
-        console.log(progress);
     }
 
     if (progress < 0) setProgress(0);

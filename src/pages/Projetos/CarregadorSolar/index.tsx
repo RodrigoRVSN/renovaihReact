@@ -1,21 +1,18 @@
 import '../../../components/responsividade/styles.css';
 import BackToHome from '../../../components/BackToHome';
-import { Parent, SidebarPos, Sidebar, Content, Descricao } from './styles';
-import { GifCard } from '../../../components/Gif';
+import { Parent, Sidebar, Content, Descricao } from './styles';
+import { Gif } from '../../../components/Gif';
 import { ProgressBar } from '../../../components/ProgressBar';
 
 export default function CarregadorSolar() {
     return (
         <>
             <Parent>
-                <SidebarPos>
-                    <Sidebar>
+                <Sidebar>
 
-                        <BackToHome />
-                        <GifCard gifSrc = '../../../img/sun.gif'/>
+                    <BackToHome />
 
-                    </Sidebar>
-                </SidebarPos>
+                </Sidebar>
 
                 <ProgressBar total={6} />
 
@@ -73,6 +70,7 @@ export default function CarregadorSolar() {
                                         <p>Hora de testar!. </p>
                                         <p>Espero que você tenha conseguido.</p>
                                         <h3>Temos muitos outros projetos esperando por você, <span>nos vemos em breve!</span> </h3>
+                                        <Gif/>
                                     </div>
 
                                 </div>

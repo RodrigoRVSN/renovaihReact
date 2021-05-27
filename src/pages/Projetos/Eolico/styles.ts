@@ -5,16 +5,12 @@ export const Parent = styled.div`
     display: flex;
 `;
 
-export const SidebarPos = styled.div`
-    position: absolute;
-`;
-
 export const Sidebar = styled.div`
     width: 20%;
     height: 100%;
     position: fixed;
-    background-color: ${colors.blue};
     @media screen and (max-width:800px){
+        background-color: ${colors.blue};
         width: 100%;
         height: 5%;
     }

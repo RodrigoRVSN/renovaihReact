@@ -3,22 +3,22 @@ import '../responsividade/styles.css';
 import styled from "styled-components";
 import { colors } from '../../db.json';
 
-const Gif = styled.img`
-    margin: 70% 0 0 10%;
-    text-align: center;
-    width: 80%;
-    border: 8px solid #ffffff;
+const GifStyle = styled.img`
+    display: flex;
+    margin: auto;
+    width: 15rem;
+    border: 5px solid #ffffff;
     border-radius: 50%;
     background-color: ${colors.cyan};
     @media screen and (max-width:800px){
-       display: none;
+       width: 10rem;
     }
 `;
 
-export const GifCard = ({ gifSrc }) => {
+export const Gif = () => {
     return (
         <>
-            <Gif src={gifSrc} alt={gifSrc} />
+            <GifStyle src="https://cliply.co/wp-content/uploads/2021/03/372103860_CHECK_MARK_400px.gif" />
         </>
     )
 }

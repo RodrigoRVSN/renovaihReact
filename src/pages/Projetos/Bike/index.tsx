@@ -1,21 +1,18 @@
 import '../../../components/responsividade/styles.css';
-import { Parent, SidebarPos, Sidebar, Content, Descricao, ImgP1 } from './styles';
+import { Parent, Sidebar, Content, Descricao, ImgP1 } from './styles';
 import BackToHome from '../../../components/BackToHome';
-import { GifCard } from '../../../components/Gif';
 import { ProgressBar } from '../../../components/ProgressBar';
+import { Gif } from '../../../components/Gif';
 
 export default function GeradorBike() {
     return (
         <>
             <Parent>
-                <SidebarPos>
-                    <Sidebar>
+                <Sidebar>
 
-                        <BackToHome />
-                        <GifCard gifSrc='../../../img/Bike.gif' />
+                    <BackToHome />
 
-                    </Sidebar>
-                </SidebarPos>
+                </Sidebar>
 
                 <ProgressBar total={7} />
                 <Content>
@@ -96,7 +93,7 @@ export default function GeradorBike() {
                                             Agora que está tudo pronto, é hora de dar aquela pedalada. </p>
                                         <p>Espero que você tenha conseguido! </p>
                                         <h3>Temos muitos outros projetos esperando por você, <span>nos vemos em breve!</span> </h3>
-
+                                        <Gif/>
                                     </div>
                                 </div>
                             </div>

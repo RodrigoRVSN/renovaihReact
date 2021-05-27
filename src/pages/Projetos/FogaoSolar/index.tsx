@@ -1,26 +1,21 @@
 import '../../../components/responsividade/styles.css';
 import BackToHome from '../../../components/BackToHome';
-import { Parent, SidebarPos, Sidebar, Content, Descricao, ImgP1 } from './styles';
+import { Parent, Sidebar, Content, Descricao, ImgP1 } from './styles';
 import p1 from '../../../img/passo1.png';
 import p2 from '../../../img/p2.jpg';
 import p3 from '../../../img/p3.jpg';
 import p4 from '../../../img/p4.jpg';
 import p5 from '../../../img/p5.jpg';
-import { GifCard } from '../../../components/Gif';
+import { Gif } from '../../../components/Gif';
 import { ProgressBar } from '../../../components/ProgressBar';
 
 export default function FogaoSolar() {
     return (
         <>
             <Parent>
-                <SidebarPos>
-                    <Sidebar>
-
-                        <BackToHome />
-                        <GifCard gifSrc = '../../../img/sun.gif'/>
-
-                    </Sidebar>
-                </SidebarPos>
+                <Sidebar>
+                    <BackToHome />
+                </Sidebar>
 
                 <ProgressBar total={12} />
 
@@ -179,6 +174,7 @@ export default function FogaoSolar() {
                                             Agora é só colocar a panela para esquentar. </p>
                                         <p> Espero que você tenha conseguido, a diversão apenas começou! </p>
                                         <h3>Temos muitos outros projetos esperando por você, <span>nos vemos em breve!</span> </h3>
+                                        <Gif/>
 
                                     </div>
 

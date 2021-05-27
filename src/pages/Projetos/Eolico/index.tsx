@@ -1,21 +1,16 @@
 import '../../../components/responsividade/styles.css';
 import BackToHome from '../../../components/BackToHome';
-import { Parent, SidebarPos, Sidebar, Content, Descricao } from './styles';
-import { GifCard } from '../../../components/Gif';
+import { Parent, Sidebar, Content, Descricao } from './styles';
+import { Gif } from '../../../components/Gif';
 import { ProgressBar } from '../../../components/ProgressBar';
 
 export default function MiniGeradorEolico() {
     return (
         <>
             <Parent>
-                <SidebarPos>
-                    <Sidebar>
-
-                        <BackToHome />
-                        <GifCard gifSrc = '../../../img/giphy.gif'/>
-
-                    </Sidebar>
-                </SidebarPos>
+                <Sidebar>
+                    <BackToHome />
+                </Sidebar>
 
                 <ProgressBar total={11} />
 
@@ -104,6 +99,7 @@ export default function MiniGeradorEolico() {
                                         <h3>Prontinho, <span>feito!</span> </h3>
                                         <p> Espero que você tenha conseguido, a diversão apenas começou! </p>
                                         <h3>Temos muitos outros projetos esperando por você, <span>nos vemos em breve!</span> </h3>
+                                        <Gif/>
                                     </div>
 
                                 </div>

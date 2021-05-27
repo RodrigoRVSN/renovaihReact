@@ -5,7 +5,7 @@ import { colors } from '../../db.json';
 
 const Icone = styled.div`
     background-color: ${colors["dark-blue"]};
-    height: 5%;
+    height: 12vh;
     padding: 1rem;
     border-radius: 0 0 1.1rem 1.1rem;
     z-index: 1;
