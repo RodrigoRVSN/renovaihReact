@@ -57,18 +57,34 @@ interface totalProps {
 export const ProgressBar = ({ total }: totalProps) => {
 
     let [progress, setProgress] = useState(0);
-    let porcent = Math.round((1 / ((total - 1) / 100)));
+    let porcent = (1 / ((total - 1) / 100));
+
     const progressNext = () => {
+
         (progress >= 100) ? setProgress(0) : setProgress(progress + porcent);
-        console.log('mais ' + progress);
+        console.log(progress);
+
     }
     const progressBack = () => {
         (progress <= 0) ? setProgress(100) : setProgress(progress - porcent);
-
-        console.log('menos -> ' + progress);
+        console.log(progress);
     }
+
     if (progress < 0) setProgress(0);
-    
+
+    if (progress !== 0) {
+
+        var videos = document.querySelectorAll('iframe, video');
+        Array.prototype.forEach.call(videos, function (video) {
+            if (video.tagName.toLowerCase() === 'video') {
+                video.pause();
+            } else {
+                var src = video.src;
+                video.src = src;
+            }
+        }); // pausa o vídeo ao clique
+    }
+
     return (
         <>
             <BarProgress>
