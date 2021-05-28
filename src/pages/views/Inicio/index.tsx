@@ -37,7 +37,7 @@ export default function Inicio() {
                     <div className="row row-cols-1 row-cols-md-3 g-4">
                         <div className="col">
                             <a className="link" href="/projetos">
-                                <Card className="border h-40">
+                                <Card>
                                     <img width="40%" height="40%" src="img/handson.jpg" className="card-img-top" alt="..." />
                                     <CardBody>
                                         <h2>Mão na massa</h2>
@@ -49,7 +49,7 @@ export default function Inicio() {
                         </div>
                         <div className="col">
                             <a className="link" href="/sustentabilidade">
-                                <Card className="card h-40">
+                                <Card>
                                     <img width="40%" height="40%" src="img/sustentabilidade.jpg" className="card-img-top" alt="..." />
                                     <CardBody>
                                         <h2>Sustentabilidade</h2>
