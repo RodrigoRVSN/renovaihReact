@@ -1,41 +1,41 @@
-.navbar-dark .navbar-brand{
-    color: #FFF;
-    text-decoration: none;
-    font-family: 'Modak', cursive;   
-    text-shadow: 4px 2px 2px #2117a7;
-    color:var(--pink);
-    margin-left: 3vw;
-    font-size: 2.1rem;
+.navbar-dark .navbar-brand {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Modak", cursive;
+  text-shadow: 4px 2px 2px #2117a7;
+  color: var(--pink);
+  margin-left: 3vw;
+  font-size: 2.1rem;
 }
 
-.navbar-dark .navbar-brand:hover{
-    color: var(--cyan);
-    transition: ease-in 0.1s;
-    transform: scale(1.1);
+.navbar-dark .navbar-brand:hover {
+  color: var(--cyan);
+  transition: ease-in 0.1s;
+  transform: scale(1.1);
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #FFF;
-    font-family: 'Fredoka One', cursive;
-    margin-left: 2rem;
+  color: #fff;
+  font-family: "Fredoka One", cursive;
+  margin-left: 2rem;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-    transition: ease all 0.2s;
-    border-top: 4px solid var(--pink);
-    color: var(--cyan);
+  transition: ease all 0.2s;
+  border-top: 4px solid var(--pink);
+  color: var(--cyan);
 }
 
-@media screen and (max-width:992px){
-    .navbar-dark .container-fluid li{
-        background: linear-gradient(to right,var(--dark-blue),var(--blue));
-    }
-    
-    .navbar-dark .navbar-nav .nav-link:hover {
-        transform: none;
-    }
+@media screen and (max-width: 992px) {
+  .navbar-dark .container-fluid li {
+    background: linear-gradient(to right, var(--dark-blue), var(--blue));
+  }
 
-    .navbar-dark .navbar-brand{
-        font-size: 1.8rem;
-    }
+  .navbar-dark .navbar-nav .nav-link:hover {
+    transform: none;
+  }
+
+  .navbar-dark .navbar-brand {
+    font-size: 1.8rem;
+  }
 }

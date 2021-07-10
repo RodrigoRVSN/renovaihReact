@@ -1,30 +1,28 @@
-@media screen and (max-width:900px){  
+@media screen and (max-width: 900px) {
+  .footer-1 {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .footer-1{
-        display: flex;
-        flex-direction: column;
-    }
+  .textoRodape-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 62.5%;
+  }
 
-    .textoRodape-2{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        font-size: 62.5%;
-    }
-    
-    .icone{
-        width: 100%;
-        padding: 5px;
-        margin-top: 0px;
-    }
-    
+  .icone {
+    width: 100%;
+    padding: 5px;
+    margin-top: 0px;
+  }
 
-    .textoRodape{  
-        font-size: 3rem;
-        text-align: center;
-    }
+  .textoRodape {
+    font-size: 3rem;
+    text-align: center;
+  }
 }
 
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
