@@ -15,8 +15,7 @@ export const Col = styled.div`
 
 export const Img = styled.img`
   width: 100%;
-  margin-top: 3rem;
-  height: auto;
+  margin: auto;
 `;
 
 export const CardBody = styled.div`

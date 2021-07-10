@@ -12,7 +12,7 @@ export default class ProjectsPage extends Component {
               <Card className="mb-3">
                 <div className="row no-gutters">
                   <div className="col-md-4">
-                    <Img src="../../../img/206.jpg" alt="..." />
+                    <Img src="../../../img/solar.png" alt="..." />
                   </div>
                   <div className="col-md-8">
                     <CardBody>
